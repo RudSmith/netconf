@@ -78,6 +78,12 @@ gopkg_install() {
         echo "go get ${PKG}"
         go get -u ${PKG} || { echo "gopkg_install error."; exit 1; }
     done
+
+    mkdir -p ~/go/src/github.com/juniper/
+    mkdir -p ~/go/src/github.com/fsnotify/
+
+    cp -r ~/go/pkg/mod/\!juniper/go-netconf@v0.1.2-0.20200108151209-8a71e82a9a41/ ~/go/src/github.com/juniper/go-netconf
+    cp -r ~/go/pkg/mod/github.com/fsnotify/fsnotify@v1.4.8-0.20190312181446-1485a34d5d57/ ~/go/src/github.com/fsnotify/fsnotify
 }
 
 sysrepo_install() {
