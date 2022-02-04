@@ -23,7 +23,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	nc "github.com/hiepon/go-netconf/netconf"
+	nc "github.com/juniper/go-netconf/netconf"
 )
 
 func outputRPCReply(path string, reply *nc.RPCReply) error {

@@ -113,7 +113,7 @@ beluganos_netconf_install() {
     sysrepo_install
 
     ./bootstrap.sh
-    make release
+    sudo GO111MODULE=auto make release
     # sudo make install-services
 }
 

@@ -20,7 +20,7 @@ package ncccmd
 import (
 	"os"
 
-	nc "github.com/hiepon/go-netconf/netconf"
+	nc "github.com/juniper/go-netconf/netconf"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
