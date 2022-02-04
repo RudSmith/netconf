@@ -82,7 +82,7 @@ gopkg_install() {
     mkdir -p ~/go/src/github.com/juniper/
     mkdir -p ~/go/src/github.com/fsnotify/
 
-    cp -r ~/go/pkg/mod/\!juniper/go-netconf@v0.1.2-0.20200108151209-8a71e82a9a41/ ~/go/src/github.com/juniper/go-netconf
+    cp -r ~/go/pkg/mod/github.com/\!juniper/go-netconf@v0.1.2-0.20200108151209-8a71e82a9a41/ ~/go/src/github.com/juniper/go-netconf
     cp -r ~/go/pkg/mod/github.com/fsnotify/fsnotify@v1.4.8-0.20190312181446-1485a34d5d57/ ~/go/src/github.com/fsnotify/fsnotify
 }
 
