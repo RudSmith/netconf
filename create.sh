@@ -68,7 +68,7 @@ protoc_install() {
 
     sudo chmod +x /usr/local/go/bin/protoc
 
-    sudo apt install golang-goprotobuf-dev
+    sudo apt install golang-goprotobuf-dev golang-golang-x-tools
 }
 
 #
