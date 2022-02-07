@@ -67,6 +67,8 @@ protoc_install() {
     sudo unzip -o -d /usr/local/go /tmp/${PROTOC_FILE} || { echo "protoc_install/unzip error."; exit 1; }
 
     sudo chmod +x /usr/local/go/bin/protoc
+
+    sudo apt install golang-goprotobuf-dev
 }
 
 #
