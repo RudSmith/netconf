@@ -67,8 +67,6 @@ protoc_install() {
     sudo unzip -o -d /usr/local/go /tmp/${PROTOC_FILE} || { echo "protoc_install/unzip error."; exit 1; }
 
     sudo chmod +x /usr/local/go/bin/protoc
-
-    sudo apt install golang-goprotobuf-dev golang-golang-x-tools
 }
 
 #
@@ -88,6 +86,8 @@ gopkg_install() {
     cp -r ~/go/pkg/mod/github.com/fsnotify/fsnotify@v1.4.8-0.20190312181446-1485a34d5d57/ ~/go/src/github.com/fsnotify/fsnotify
 
     cp -r src/* ~/go/src
+
+    sudo apt install golang-goprotobuf-dev golang-golang-x-tools
 }
 
 sysrepo_install() {
